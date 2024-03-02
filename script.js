@@ -284,11 +284,7 @@ function dragSelectorLogic() {
                 div.style.width = "0px";
                 div.style.height = "0px";
                 div.style.transition = "all 0.3s";
-
-                // aspetta che prima finisca l'animazione poi rimuove il selezionatore
-                setTimeout(function() {
-                    div.style.display = "none";
-                }, 300);
+                div.style.display = "none";
             });
         }
     });
